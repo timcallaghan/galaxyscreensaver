@@ -1,0 +1,189 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+ID_APP                  ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+DLG_SCRNSAVECONFIGURE DIALOGEX 0, 0, 290, 307
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Galaxy Simulation Configuration"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Galaxy Type and Number of Stars",IDC_STATIC,7,6,136,68
+    CONTROL         "Elliptical",IDC_GALAXY_TYPE_ELLIPTICAL,"Button",
+                    BS_AUTORADIOBUTTON,12,18,41,12
+    CONTROL         "Spiral",IDC_GALAXY_TYPE_SPIRAL,"Button",
+                    BS_AUTORADIOBUTTON,12,36,33,12
+    PUSHBUTTON      "Reset Defaults",IDC_BTN_RESET_DEFAULTS,65,26,56,14
+    LTEXT           "Number of Stars:",IDC_STATIC_NUMBER_OF_STARS,13,55,61,
+                    12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_NUMBER_OF_STARS,92,55,42,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    GROUPBOX        "Spiral Parameters",IDC_GROUP_SPIRAL,7,80,136,71
+    LTEXT           "Spiral Turns Factor:",IDC_STATIC_SPIRAL_TURNS_FACTOR,13,
+                    92,75,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SPIRAL_TURNS_FACTOR,92,92,42,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "Radial Scaling:",IDC_STATIC_SPIRAL_RADIAL_SCALING,13,
+                    110,75,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SPIRAL_RADIAL_SCALING,92,110,42,12,
+                    ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "Radial Spread Scaling:",
+                    IDC_STATIC_SPIRAL_RADIAL__SPREAD_SCALING,13,128,75,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SPIRAL_RADIAL_SPREAD_SCALING,92,128,42,12,
+                    ES_AUTOHSCROLL,WS_EX_RIGHT
+    GROUPBOX        "General Parameters",IDC_GROUP_GENERAL,147,6,136,145
+    LTEXT           "Vertical Spread:",IDC_STATIC_ELLIP_VERT_SPREAD,154,18,
+                    61,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_VERT_SPREAD,232,18,42,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "Vertical Exp Factor:",IDC_STATIC_ELLIP_EXP_FACTOR,154,
+                    36,61,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_EXP_FACTOR,232,36,42,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "Radial Spread:",IDC_STATIC_RADIAL_SPREAD,154,55,48,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_RADIAL_SPREAD,232,55,42,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "Rotation Rate:",IDC_STATIC_ROTATION_RATE,154,73,48,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_ROTATION_RATE,232,73,42,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "Size of Stars:",IDC_STATIC_SIZE_OF_STARS,154,92,48,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_SIZE_OF_STARS,232,92,42,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    CONTROL         "Fixed Camera Position",IDC_CHECK_FIXED_CAMERA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,154,110,120,12
+    LTEXT           "Viewing Angle (deg.)",IDC_STATIC_VIEWING_ANGLE,154,128,
+                    73,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_VIEWING_ANGLE,232,128,42,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    GROUPBOX        "Preview",IDC_STATIC,7,151,276,129
+    CONTROL         "",IDC_PREVIEW_PANE,"Static",SS_BLACKRECT,47,163,195,105
+    DEFPUSHBUTTON   "OK",IDOK,80,286,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,286,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    DLG_SCRNSAVECONFIGURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        VERTGUIDE, 143
+        VERTGUIDE, 274
+        VERTGUIDE, 283
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 300
+        HORZGUIDE, 6
+        HORZGUIDE, 74
+        HORZGUIDE, 151
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_DESCRIPTION         "3D Galaxy Simulation"
+END
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
